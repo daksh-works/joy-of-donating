@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blood Donation</title>
+    <style>
+        body 
+        {
+            font-family: "Overpass", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; 
+            margin: 0;
+            padding: 0;
+            background-color: #ffdbe1; /* Warm off-white */
+            background-image: url('bloodbg.webp'); /* Replace 'background.jpg' with the path to your image */
+            background-size: cover; /* Cover the entire viewport */
+            background-position: center; /* Center the background image */
+            background-attachment: fixed; /* Fix the background image in place */
+            margin: 0; /* Remove default body margin */
+            padding: 0; /* Remove default body padding */
+        }
+
+        .container2
+        {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffcece; /* White */
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 
+        {
+            text-align: center;
+        }
+
+        .center /*to align the image in center */
+        {
+            display: block; /* Make the image a block element */
+            margin: auto; /* Set margins to auto to horizontally center the image */
+        }
+        input[type="text"],input[type="tel"],input[type="number"]
+        {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #cccccc; /* Light gray */
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .content
+        {
+            margin-bottom: 20px;
+            margin-right: 20px;
+        }
+        select
+        {
+            border: 1px solid #cccccc;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            width:101.75%;
+            padding: 8px;
+        }
+        hr
+        {
+            background-color: rgb(0, 0, 0);
+            border: none;
+            box-shadow: none;
+            height: 1px;
+        }
+        .container2 button:hover
+        {
+            background-color: rgb(255, 108, 108);
+        }
+
+        .container2 button 
+        {
+            padding: 10px 20px;
+            background-color: rgb(255, 141, 141);
+            color: #ffffff; /* White */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .ftco-navbar-light 
+        {
+            background: transparent !important;
+            position: absolute;
+            left: 0;
+            right: 0;
+            z-index: 3;
+            top: 10px; 
+        }
+        .navbar-brand 
+        {
+            text-transform: uppercase;
+            letter-spacing: .1em;
+            font-size: 30px;
+            font-family: "Overpass", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; 
+        }
+    </style>
+
+    <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,500|Dosis:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Joy of Donating</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button> 
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="clothesDG2.html" class="nav-link">Cloth Donation</a></li>
+          <li class="nav-item"><a href="animalfoodDG.html" class="nav-link">Animal Food Donation</a></li>
+          <li class="nav-item"><a href="blooddonationDG.html" class="nav-link">Blood Donation</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+</nav>
+<div class="container2">
+    <h1>Blood Donation</h1>
+    <hr>
+    <h2>Why donate blood?</h2>
+    <p class="content">
+       Apart from saving someone's life, there are many benefits of blood donation, here are few of them:
+       <ul>
+        <li style="margin-bottom:7px;">Excess iron in the body can be harmful as it increases the risk of
+            diseases such as heart disease, cancer, and liver damage. Regular 
+            blood donation can help reduce the body's iron levels.</li>
+        <li style="margin-bottom:7px;">Blood donation can stimulate the immune system, leading to an 
+            increase in the production of white blood cells and antibodies. 
+            This enhanced immune function can help the body fight off 
+            infections and diseases more effectively.</li>
+        <li style="margin-bottom:7px;">After donating blood, the body works to replenish the lost blood supply. This process
+            stimulates the production of new red blood cells by the bone marrow, which can improve 
+            the overall health and function of the circulatory system.</li>
+        </ul>
+    </p>
+    <h2>Who can donate Blood to whom?</h2>
+    <p class="content">
+        Those with "<b>&mdash;</b>" (Rh factor absent) sign can donate to those with "+" (Rh factor absent) sign in their blood group but not vice-versa.
+        Each alphabet group can donate within themselves keeping in mind the previously stated rule (i.e. Rh factor consideration). O can donate
+        blood to every blood group and AB can can receive blood from every blood group.<br>
+        O- is the Universal Donor.<br>
+        AB+ is the Universal Recipient.<br>
+        For more clarity, refer the below image.<br><br>
+        <img src="blood-compatibility.jpg" width="400px" class="center">
+    </p>
+    <h2>Blood Donation Form</h2>
+    <form action="https://script.google.com/a/macros/it.vjti.ac.in/s/AKfycbye3vR959rZMOAfArwWjewCxBwjzGsjayDXpQy7PVe2DSVFiGciwHXq7FdcAA9vD3tY/exec" method="post" class="content">
+        <input type="hidden" id="formType" name="formType" value="bloodDonation">
+        
+        <label for="name">Name:</label><br>
+        <input type="text" placeholder="Name Surname" id="name" name="name" required><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" required><br>
+
+        <label for="address">Address:</label><br>
+        <input type="text" id="address" name="address" required><br>
+
+        <label>Have you donated blood before?</label>
+        <div class="radio-label">
+            <input type="radio" id="yes-donate" name="donate" value="yes" required>
+            <label for="yes-donate">Yes</label>
+        </div>
+        <div class="radio-label">
+            <input type="radio" id="no-donate" name="donate" value="no" required>
+            <label for="no-donate">No</label>
+        </div><br>
+
+        <label>Do you have any disease?</label>
+        <div class="radio-label">
+            <input type="radio" id="yes-disease" name="disease" value="yes" required>
+            <label for="yes-disease">Yes</label>
+        </div>
+        <div class="radio-label">
+            <input type="radio" id="no-disease" name="disease" value="no" required>
+            <label for="no-disease">No</label>
+        </div><br>
+
+        <label for="blood-group">Blood Group:</label><br>
+        <select id="blood-group" name="blood-group" required>
+            <option value="">Select...</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+        </select><br><br>
+    <button type="submit">Submit</button>
+    </form>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var navbarToggler = document.querySelector('.navbar-toggler');
+        var navbarCollapse = document.querySelector('.navbar-collapse');
+
+        navbarToggler.addEventListener('click', function() {
+            navbarCollapse.classList.toggle('show');
+        });
+    });
+
+
+</script>
+</body>
+</html>

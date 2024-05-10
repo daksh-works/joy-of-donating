@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Donate Clothes</title>
+<style>
+    body 
+    {
+        font-family: "Overpass", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; 
+        /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+        margin: 0;
+        padding: 0;
+        background-color: #ffdbe1; /* Warm off-white */
+        background-image: url('clothBg.jpeg'); /* Replace 'background.jpg' with the path to your image */
+        background-size: cover; /* Cover the entire viewport */
+        background-position: center; /* Center the background image */
+        background-attachment: fixed; /* Fix the background image in place */
+        margin: 0; /* Remove default body margin */
+        padding: 0; /* Remove default body padding */
+    }
+
+    .container2 
+    {
+        max-width: 900px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fffad2; /* White */
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        text-align: center;
+        color: #333333; /* Dark gray */
+    }
+
+    .option {
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+
+    .option h2 {
+        color: #323232; /* Gray */
+    }
+
+    .option p {
+        color: #424242; /* Light gray */
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: #555555; /* Gray */
+    }
+
+    input[type="text"],
+    input[type="tel"] {
+        width: 101.75%;
+        padding: 8px;
+        border: 1px solid #cccccc; /* Light gray */
+        border-radius: 5px;
+    }
+    select
+    {
+        border: 1px solid #cccccc;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        width:101.75%;
+        padding: 8px;
+    }
+
+    .container2 button {
+        padding: 10px 20px;
+        background-color: #c8a700; /* Alizarin */
+        color: #ffffff; /* White */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        display: none;
+    }
+
+    .container2 button:hover {
+        background-color: #ffd503; /* Pomegranate */
+    }
+
+    .hidden {
+        display: none;
+    }
+    .container2 img {
+        display: block; /* Make image a block element */
+        margin: 0 auto; /* Center the image horizontally */
+    }
+    .ending p
+    {
+        text-align: center;
+    }
+    .radio-container {
+        display:flex; /* Use flexbox to arrange items in a row */
+        align-items: center; /* Align items vertically in the center */
+    }
+    .radio-container input[type="radio"] {
+        vertical-align:top; /* Align the radio buttons vertically with the labels */
+    }
+    .radio-container label {
+        margin-right: 30px; /* Add some space between labels and radio buttons */
+    }
+    .ftco-navbar-light 
+    {
+        background: transparent !important;
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 3;
+        top: 10px; 
+    }
+    .navbar-brand 
+    {
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        font-size: 30px;
+        font-family: "Overpass", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; 
+    }
+    .container2 a
+    {
+        color: blue;
+    }
+</style>
+    <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,500|Dosis:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Joy of Donating</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="oi oi-menu"></span> Menu
+          </button> 
+          <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="clothesDG2.html" class="nav-link">Cloth Donation</a></li>
+              <li class="nav-item"><a href="animalfoodDG.html" class="nav-link">Animal Food Donation</a></li>
+              <li class="nav-item"><a href="blooddonationDG.html" class="nav-link">Blood Donation</a></li>
+              <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+<div class="container2">
+    <h1>Donate Clothes</h1>
+    <hr>
+    <h2>Why should we donate clothes?</h2>
+    <p>
+        <ul>
+        <li><b>Helping Those in Need:</b> Donating clothes provides essential clothing items to individuals and families who may not have the means to purchase them. This helps fulfill basic needs and improves their quality of life.
+        <br><br><li><b>Environmental Benefits:</b> Donating clothes promotes sustainability by extending the lifecycle of clothing items. Instead of discarding them, donating allows others to reuse and repurpose clothes, reducing waste and the environmental impact of textile production.
+        <br><br><li><b>Supporting Charitable Causes:</b> Many charitable organizations rely on clothing donations to support their programs and initiatives, such as providing assistance to the homeless, supporting disaster relief efforts, or funding community development projects.
+        <br><br><li><b>Promoting Social Responsibility:</b> By donating clothes, individuals contribute to building a more compassionate and caring society. It fosters a sense of community and encourages people to support one another in times of need.
+        </ul>
+    </p>
+    <div class="option">
+        <h2>Donating Clothes</h2>
+        <p>If you wish to donate clothes, you can either
+            send it to our NGO's address (given below) or based on your request
+            we can arrange a pickup from your desired location (fill out the form below).
+        </p>
+        <p>Please select one of the following options:</p>
+        <ul>
+            <li>Deliver clothes to our NGO</li>
+            <p>For location of our NGO, <a href="https://maps.app.goo.gl/H2LSu6bPny56jmeK8">click here</a>.</p>
+            <li><input type="checkbox" name="pickup" id="home-pickup"> Arrange for a volunteer pickup from your desired location</li>
+        </ul>
+        <form method="post" action="https://script.google.com/a/macros/it.vjti.ac.in/s/AKfycbz6cI6cDsOgcAjr1CnvXAlWkzEWd0xcGI3ae0vQphnr2hq4BAMRlQgyFYVYpeUJ4rjTqQ/exec" class="form-group hidden" id="pickup-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name Surname"><br><br>
+            <!-- <label for="phone">Your Phone Number:</label>
+            <input type="tel" id="phone" name="phone" > -->
+            <label for="countryCode">Country Code:</label><br>
+            <select id="countryCode" name="countryCode">
+              <option value="+93">+93 (Afghanistan)</option>
+              <option value="+355">+355 (Albania)</option>
+              <option value="+213">+213 (Algeria)</option>
+              <option value="+376">+376 (Andorra)</option>
+              <option value="+244">+244 (Angola)</option>
+              <option value="+1-268">+1-268 (Antigua and Barbuda)</option>
+              <option value="+54">+54 (Argentina)</option>
+              <option value="+374">+374 (Armenia)</option>
+              <option value="+61">+61 (Australia)</option>
+              <option value="+43">+43 (Austria)</option>
+              <option value="+994">+994 (Azerbaijan)</option>
+              <option value="+1-242">+1-242 (Bahamas)</option>
+              <option value="+973">+973 (Bahrain)</option>
+              <option value="+880">+880 (Bangladesh)</option>
+              <option value="+1-246">+1-246 (Barbados)</option>
+              <option value="+375">+375 (Belarus)</option>
+              <option value="+32">+32 (Belgium)</option>
+              <option value="+501">+501 (Belize)</option>
+              <option value="+229">+229 (Benin)</option>
+              <option value="+975">+975 (Bhutan)</option>
+              <option value="+591">+591 (Bolivia)</option>
+              <option value="+387">+387 (Bosnia and Herzegovina)</option>
+              <option value="+267">+267 (Botswana)</option>
+              <option value="+55">+55 (Brazil)</option>
+              <option value="+673">+673 (Brunei)</option>
+              <option value="+359">+359 (Bulgaria)</option>
+              <option value="+226">+226 (Burkina Faso)</option>
+              <option value="+257">+257 (Burundi)</option>
+              <option value="+855">+855 (Cambodia)</option>
+              <option value="+237">+237 (Cameroon)</option>
+              <option value="+1">+1 (Canada)</option>
+              <option value="+238">+238 (Cape Verde)</option>
+              <option value="+236">+236 (Central African Republic)</option>
+              <option value="+235">+235 (Chad)</option>
+              <option value="+56">+56 (Chile)</option>
+              <option value="+86">+86 (China)</option>
+              <option value="+57">+57 (Colombia)</option>
+              <option value="+269">+269 (Comoros)</option>
+              <option value="+242">+242 (Congo)</option>
+              <option value="+506">+506 (Costa Rica)</option>
+              <option value="+225">+225 (Cote d'Ivoire)</option>
+              <option value="+385">+385 (Croatia)</option>
+              <option value="+53">+53 (Cuba)</option>
+              <option value="+357">+357 (Cyprus)</option>
+              <option value="+420">+420 (Czech Republic)</option>
+              <option value="+243">+243 (Democratic Republic of the Congo)</option>
+              <option value="+45">+45 (Denmark)</option>
+              <option value="+253">+253 (Djibouti)</option>
+              <option value="+1-767">+1-767 (Dominica)</option>
+              <option value="+1-809">+1-809 (Dominican Republic)</option>
+              <option value="+670">+670 (East Timor)</option>
+              <option value="+593">+593 (Ecuador)</option>
+              <option value="+20">+20 (Egypt)</option>
+              <option value="+503">+503 (El Salvador)</option>
+              <option value="+240">+240 (Equatorial Guinea)</option>
+              <option value="+291">+291 (Eritrea)</option>
+              <option value="+372">+372 (Estonia)</option>
+              <option value="+251">+251 (Ethiopia)</option>
+              <option value="+679">+679 (Fiji)</option>
+              <option value="+358">+358 (Finland)</option>
+              <option value="+33">+33 (France)</option>
+              <option value="+241">+241 (Gabon)</option>
+              <option value="+220">+220 (Gambia)</option>
+              <option value="+995">+995 (Georgia)</option>
+              <option value="+49">+49 (Germany)</option>
+              <option value="+233">+233 (Ghana)</option>
+              <option value="+30">+30 (Greece)</option>
+              <option value="+1-473">+1-473 (Grenada)</option>
+              <option value="+502">+502 (Guatemala)</option>
+              <option value="+224">+224 (Guinea)</option>
+              <option value="+245">+245 (Guinea-Bissau)</option>
+              <option value="+592">+592 (Guyana)</option>
+              <option value="+509">+509 (Haiti)</option>
+              <option value="+504">+504 (Honduras)</option>
+              <option value="+852">+852 (Hong Kong)</option>
+              <option value="+36">+36 (Hungary)</option>
+              <option value="+354">+354 (Iceland)</option>
+              <option value="+91" selected>+91 (India)</option>
+              <option value="+62">+62 (Indonesia)</option>
+              <option value="+98">+98 (Iran)</option>
+              <option value="+964">+964 (Iraq)</option>
+              <option value="+353">+353 (Ireland)</option>
+              <option value="+972">+972 (Israel)</option>
+              <option value="+39">+39 (Italy)</option>
+              <option value="+1-876">+1-876 (Jamaica)</option>
+              <option value="+81">+81 (Japan)</option>
+              <option value="+962">+962 (Jordan)</option>
+              <option value="+7">+7 (Kazakhstan)</option>
+              <option value="+254">+254 (Kenya)</option>
+              <option value="+686">+686 (Kiribati)</option>
+              <option value="+850">+850 (North Korea)</option>
+              <option value="+82">+82 (South Korea)</option>
+              <option value="+965">+965 (Kuwait)</option>
+              <option value="+996">+996 (Kyrgyzstan)</option>
+              <option value="+856">+856 (Laos)</option>
+              <option value="+371">+371 (Latvia)</option>
+              <option value="+961">+961 (Lebanon)</option>
+              <option value="+266">+266 (Lesotho)</option>
+              <option value="+231">+231 (Liberia)</option>
+              <option value="+218">+218 (Libya)</option>
+              <option value="+423">+423 (Liechtenstein)</option>
+              <option value="+370">+370 (Lithuania)</option>
+              <option value="+352">+352 (Luxembourg)</option>
+              <option value="+853">+853 (Macau)</option>
+              <option value="+389">+389 (North Macedonia)</option>
+              <option value="+261">+261 (Madagascar)</option>
+              <option value="+265">+265 (Malawi)</option>
+              <option value="+60">+60 (Malaysia)</option>
+              <option value="+960">+960 (Maldives)</option>
+              <option value="+223">+223 (Mali)</option>
+              <option value="+356">+356 (Malta)</option>
+              <option value="+692">+692 (Marshall Islands)</option>
+              <option value="+222">+222 (Mauritania)</option>
+              <option value="+230">+230 (Mauritius)</option>
+              <option value="+52">+52 (Mexico)</option>
+              <option value="+691">+691 (Micronesia)</option>
+              <option value="+373">+373 (Moldova)</option>
+              <option value="+377">+377 (Monaco)</option>
+              <option value="+976">+976 (Mongolia)</option>
+              <option value="+382">+382 (Montenegro)</option>
+              <option value="+212">+212 (Morocco)</option>
+              <option value="+258">+258 (Mozambique)</option>
+              <option value="+95">+95 (Myanmar)</option>
+              <option value="+264">+264 (Namibia)</option>
+              <option value="+674">+674 (Nauru)</option>
+              <option value="+977">+977 (Nepal)</option>
+              <option value="+31">+31 (Netherlands)</option>
+              <option value="+64">+64 (New Zealand)</option>
+              <option value="+505">+505 (Nicaragua)</option>
+              <option value="+227">+227 (Niger)</option>
+              <option value="+234">+234 (Nigeria)</option>
+              <option value="+47">+47 (Norway)</option>
+              <option value="+968">+968 (Oman)</option>
+              <option value="+92">+92 (Pakistan)</option>
+              <option value="+680">+680 (Palau)</option>
+              <option value="+507">+507 (Panama)</option>
+              <option value="+675">+675 (Papua New Guinea)</option>
+              <option value="+595">+595 (Paraguay)</option>
+              <option value="+51">+51 (Peru)</option>
+              <option value="+63">+63 (Philippines)</option>
+              <option value="+48">+48 (Poland)</option>
+              <option value="+351">+351 (Portugal)</option>
+              <option value="+974">+974 (Qatar)</option>
+              <option value="+40">+40 (Romania)</option>
+              <option value="+7">+7 (Russia)</option>
+              <option value="+250">+250 (Rwanda)</option>
+              <option value="+1-869">+1-869 (Saint Kitts and Nevis)</option>
+              <option value="+1-758">+1-758 (Saint Lucia)</option>
+              <option value="+1-784">+1-784 (Saint Vincent and the Grenadines)</option>
+              <option value="+685">+685 (Samoa)</option>
+              <option value="+378">+378 (San Marino)</option>
+              <option value="+239">+239 (Sao Tome and Principe)</option>
+              <option value="+966">+966 (Saudi Arabia)</option>
+              <option value="+221">+221 (Senegal)</option>
+              <option value="+381">+381 (Serbia)</option>
+              <option value="+248">+248 (Seychelles)</option>
+              <option value="+232">+232 (Sierra Leone)</option>
+              <option value="+65">+65 (Singapore)</option>
+              <option value="+421">+421 (Slovakia)</option>
+              <option value="+386">+386 (Slovenia)</option>
+              <option value="+677">+677 (Solomon Islands)</option>
+              <option value="+252">+252 (Somalia)</option>
+              <option value="+27">+27 (South Africa)</option>
+              <option value="+211">+211 (South Sudan)</option>
+              <option value="+34">+34 (Spain)</option>
+              <option value="+94">+94 (Sri Lanka)</option>
+              <option value="+249">+249 (Sudan)</option>
+              <option value="+597">+597 (Suriname)</option>
+              <option value="+268">+268 (Swaziland)</option>
+              <option value="+46">+46 (Sweden)</option>
+              <option value="+41">+41 (Switzerland)</option>
+              <option value="+963">+963 (Syria)</option>
+              <option value="+886">+886 (Taiwan)</option>
+              <option value="+992">+992 (Tajikistan)</option>
+              <option value="+255">+255 (Tanzania)</option>
+              <option value="+66">+66 (Thailand)</option>
+              <option value="+228">+228 (Togo)</option>
+              <option value="+676">+676 (Tonga)</option>
+              <option value="+1-868">+1-868 (Trinidad and Tobago)</option>
+              <option value="+216">+216 (Tunisia)</option>
+              <option value="+90">+90 (Turkey)</option>
+              <option value="+993">+993 (Turkmenistan)</option>
+              <option value="+688">+688 (Tuvalu)</option>
+              <option value="+256">+256 (Uganda)</option>
+              <option value="+380">+380 (Ukraine)</option>
+              <option value="+971">+971 (United Arab Emirates)</option>
+              <option value="+44">+44 (United Kingdom)</option>
+              <option value="+1">+1 (United States)</option>
+              <option value="+598">+598 (Uruguay)</option>
+              <option value="+998">+998 (Uzbekistan)</option>
+              <option value="+678">+678 (Vanuatu)</option>
+              <option value="+379">+379 (Vatican City)</option>
+              <option value="+58">+58 (Venezuela)</option>
+              <option value="+84">+84 (Vietnam)</option>
+              <option value="+967">+967 (Yemen)</option>
+              <option value="+260">+260 (Zambia)</option>
+              <option value="+263">+263 (Zimbabwe)</option>
+            </select><br><br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" value="" ><br><br>
+            <div class="radio-container">
+                <label for="type">Clothes condition:</label>
+                <input type="radio" id="used" value="Used" name="condition" style="margin-top:-5px;" required>
+                <label for="used">Used clothes</label>
+                <input type="radio" id="new" value="New" name="condition" style="margin-top:-5px;" required>
+                <label for="new">New clothes</label>
+            </div>
+            <label for="address">Your Address:</label>
+            <input type="text" id="address" name="address"><br><br>
+            <button id="submit-used-clothes">Submit</button>
+        </form>
+    </div>
+    <div class="option">
+        <h2>Donate Money</h2>
+        <p>If you would like to donate money to provide clothes to those in need, please pay using UPI.</p>
+        <p>Scan the below QR code</p>
+        <img src="GPayQR.jpeg" alt="UPI QR Code" width="250px">
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var navbarToggler = document.querySelector('.navbar-toggler');
+        var navbarCollapse = document.querySelector('.navbar-collapse');
+        navbarToggler.addEventListener('click', function() {
+            navbarCollapse.classList.toggle('show');
+        });
+    });
+
+    document.getElementById('home-pickup').addEventListener('change', function() {
+        if (this.checked) 
+        {
+            document.getElementById('pickup-form').classList.remove('hidden');
+            document.getElementById('submit-used-clothes').style.display = 'block';
+        }
+        else 
+        {
+            document.getElementById('pickup-form').classList.add('hidden');
+            document.getElementById('submit-used-clothes').style.display = 'none';
+        }
+    });
+
+    document.getElementById('physical-purchase').addEventListener('change', function() {
+        if (this.checked) {
+            document.getElementById('purchase-form').classList.remove('hidden');
+            document.getElementById('submit-new-clothes').style.display = 'block';
+        } else {
+            document.getElementById('purchase-form').classList.add('hidden');
+            document.getElementById('submit-new-clothes').style.display = 'none';
+        }
+    });
+
+    //Below is for submission
+    document.getElementById('submit-used-clothes').addEventListener('click', function() {
+        var name = document.getElementById('name').value;
+        var cc = document.getElementById('countryCode').value;
+        var phone = document.getElementById('phone').value;
+        var address = document.getElementById('address').value;
+        
+        // Store the information (this can be customized based on your requirements)
+        console.log("Used Clothes Donation Info:");
+        console.log("Name:", name);
+        console.log("Phone:", phone);
+        console.log("Address:", address);
+        
+        // Clear the form fields
+        document.getElementById('name').value = '';
+        document.getElementById('phone').value = '';
+        document.getElementById('address').value = '';
+        
+        // Hide the form
+        document.getElementById('pickup-form').classList.add('hidden');
+    });  
+</script>
+
+</body>
+</html>
